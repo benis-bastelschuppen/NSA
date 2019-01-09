@@ -1,0 +1,253 @@
+			html, body
+			{
+				padding: 0;
+				margin: 0;
+			}
+			
+			body
+			{
+				background-image: url('images/background.png');
+				background-repeat: repeat;
+				color: #FFFFFA;
+			}
+		
+			div
+			{
+			    font-family:arial,sans-serif; 
+			    font-size: 11px;
+			   /* color:#000000;*/
+			}
+			
+			a, a:visited
+			{
+				color: #FFAA00;
+				text-decoration: none;
+			}
+			a:hover
+			{
+				color: #FFFF00;
+			}
+			.btn, btn:visited
+			{
+				display: inline-block;
+				font-size: 15pt;
+				height: 25px;
+				border: 2px solid #33AA33;
+				border-radius: 10px;
+				margin: 5px;
+				background-color: #006900;
+				padding: 10px;
+			}
+			.btn:hover
+			{
+				border: 2px solid #33FF33;
+				background-color: #009600;
+			}
+			#indexButton
+			{
+				position: absolute;
+				top: 4px;
+				left: 3px;
+				margin: 0 !important;
+			}
+			
+			.header
+			{
+			    width:100%;
+			    background-color: #9999FF;
+			    height:45px;
+				padding-left: 360px;
+				padding-top: 10px;
+				font-size: 25pt;
+				font-weight: bold;
+			}
+            
+            .headerPrint
+			{
+			    display:none;
+			}
+			
+			.footer
+			{
+			    font-size:10px;
+			    text-align:right;
+			    width:300px;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+			}
+			
+			.nav
+			{
+			    text-align:center;
+			    width:300px;
+				/*border: 1px solid #FFFF00;*/
+				position: absolute;
+				top: 5px;
+				left: 50px;
+			}
+	
+			.step
+			{
+			    display:none;
+			}
+
+			.stepdisplay
+			{
+			   position: relative;
+			   display:block;
+			   
+			   width: 910px;
+			   padding: 0;
+			   margin: 0 auto;
+			   /* background-color: #FF3333; */
+			   background-image: url('images/semitransparent.png');
+			}
+
+			.preview
+			{
+				text-align:center;
+				font-size: 12pt;
+			}
+			
+			/* preview images have the same width as the stepdisplay. */
+			.img_preview
+			{
+				width: 450px;
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			
+			.modelParts 
+			{ 
+			    list-style-type:none; 
+			    padding:4px 0px 0px 0px; 
+			}
+			
+			.modelParts ul 
+			{ 
+			    list-style-type:none; 
+			    float:left; 
+			    padding:5px 0px 0px 5px; 
+			    width:100px; 
+			    border:1px dotted gray; 
+			    margin:0px;
+				background-color: #9999FF;
+			   /* background-image: url('images/semitransparent.png'); */
+			}
+			.modelParts ul li 
+			{ 
+			    padding:0px; 
+			    margin:0px 
+			}
+			.modelParts ul li img 
+			{ 
+			    padding:0px; 
+			    height:64px; 
+			    width:64px; 
+			    margin-left:15px 
+			}
+			
+			.stepTextTop
+			{
+				width: 100px;
+			}
+			
+			.stepTextTop p 
+			{ 
+			    margin:0px;
+				margin-left: 10px;
+				margin-top: 10px;
+			    padding:0px;  
+			}
+			
+			.stepText p
+			{ 
+			    margin:0px; 
+			    width:30px; 
+			    padding:25px 0px 0px 10px;
+				font-weight: bold;
+			}
+            
+            .biElement
+            {
+                float:left;
+                margin:20px;
+                width:280px;                
+            }
+            
+            .stepelements
+            {
+				padding: 0;
+				margin: 0;
+                width:100%;
+			    height:100%;
+                overflow:auto;
+				background-image: url('images/semitransparent.png');
+				font-weight: bold;
+            }
+			
+			.stepContent 
+			{
+				/*background-image: url('images/semitransparent.png');*/
+			}
+			
+			#logoImg
+			{
+				position: absolute;
+				top: 8px;
+				left: 8px;
+			}
+	
+			.modelName
+			{
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				float:left;
+				width:300px;
+				z-index: 100;
+			}
+
+@media print
+{
+			body
+			{
+				background-image: none;
+				background-color: #FFFFFF;
+				color: #000000;
+			}
+			.stepContent {background-image:none;}
+            .nav {display:none;}
+			
+			.stepdisplay {display:none;}
+            
+            .stepelements
+			{
+			    display:none;
+			}
+            
+            .header
+			{
+			    display:none;
+			}
+            
+            .headerPrint
+			{
+			    display:block;
+			}
+			
+			.step
+			{
+			    display:block;
+			    width:1024px;
+			    height:620px;
+			    page-break-after:always;
+			}
+            
+            .biElement
+            {
+                width:280px;                
+            }
+}
